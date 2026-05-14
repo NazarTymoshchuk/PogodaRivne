@@ -53,8 +53,9 @@
 <div class="city">Brooklyn, New York, USA</div>
 
 <div class="search">
-    <input type="text" placeholder="Search">
+    <input id="search-input" type="text" placeholder="Search">
     <span class="icon"></span>
+    <button onclick="sendRequest()">Search</button>
 </div>
 </div>
 
@@ -108,13 +109,8 @@
 </div>
 </div>
 
-<div class="forecast">
-<div class="day"><p>Sunday</p><span>28°</span></div>
-<div class="day"><p>Monday</p><span>26°</span></div>
-<div class="day"><p>Tuesday</p><span>27°</span></div>
-<div class="day active"><p>Wednesday</p><span>23°</span></div>
-<div class="day"><p>Thursday</p><span>30°</span></div>
-<div class="day"><p>Friday</p><span>25°</span></div>
+<div id="forecast" class="forecast">
+    
 </div>
 
 </div>
