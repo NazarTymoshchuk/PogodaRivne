@@ -240,8 +240,7 @@ position:relative;
 display:inline-block;
 }
 
-.search input{
-width:160px;
+.search input, .search button{
 padding:10px 40px 10px 15px;
 
 border-radius:30px;
@@ -253,6 +252,18 @@ backdrop-filter:blur(10px);
 color:white;
 font-size:14px;
 outline:none;
+}
+
+.search button {
+    padding: 10px 20px;
+}
+
+.search button:hover {
+    background:rgba(255, 255, 255, 0.221);
+}
+
+.search button:active {
+    background:rgba(0, 0, 0, 0);
 }
 
 .search input::placeholder{
@@ -321,4 +332,136 @@ pointer-events:none;
 
 .info-card h3{
     font-size:18px;
+}
+
+@media screen and (max-width: 768px){
+
+body{
+    padding:10px;
+    align-items:flex-start;
+}
+
+.container{
+    width:100%;
+    height:auto;
+    flex-direction:column;
+    gap:15px;
+}
+
+.sidebar{
+    width:100%;
+    padding:20px;
+    border-radius:20px;
+}
+
+.main{
+    width:100%;
+    padding:20px;
+}
+
+.topbar{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:15px;
+}
+
+.search{
+    width:100%;
+}
+
+.search input{
+    width:100%;
+}
+
+.search button{
+    width:100%;
+    margin-top:10px;
+    padding:10px;
+    border:none;
+    border-radius:20px;
+}
+
+.weather-main{
+    flex-direction:column;
+    gap:25px;
+}
+
+.weather-widget{
+    justify-content:center;
+    text-align:center;
+}
+
+.temp{
+    margin-top: 30px;
+    font-size:58px;
+}
+
+.feels-like{
+    font-size:16px;
+}
+
+.recent{
+    width:100%;
+}
+
+.cards{
+    flex-direction:column;
+    gap:15px;
+}
+
+.weather-card{
+    width:100%;
+}
+
+.forecast{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:12px;
+    margin-top:30px;
+}
+
+.day{
+    padding:10px;
+    border-radius:15px;
+
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(10px);
+}
+
+.extra-info{
+    flex-direction:column;
+    gap:10px;
+}
+
+.info-card{
+    width:100%;
+}
+
+/* щоб текст не вилазив */
+.city{
+    font-size:18px;
+    word-break:break-word;
+}
+
+}
+
+
+/* ========================= */
+/* SMALL PHONES */
+/* ========================= */
+
+@media screen and (max-width: 480px){
+
+.temp{
+    font-size:46px;
+}
+
+.forecast{
+    grid-template-columns:1fr;
+}
+
+.city{
+    font-size:16px;
+}
+
 }

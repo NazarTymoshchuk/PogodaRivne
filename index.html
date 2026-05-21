@@ -26,7 +26,7 @@
 
     <div class="info-card">
         <p>🌡 Pressure</p>
-        <h3 >1013 hPa</h3>
+        <h3 id="pressure"></h3>
     </div>
 </div>
 
@@ -50,7 +50,7 @@
 <div class="main">
 
 <div class="topbar">
-<div class="city">Brooklyn, New York, USA</div>
+<div id="current-city" class="city"></div>
 
 <div class="search">
     <input id="search-input" type="text" placeholder="Search">
@@ -61,19 +61,10 @@
 
 <div class="weather-main">
 <div class="weather-widget">
-    <div id="main-temp" class="temp"></div>
-
-    <div class="details">
-        <div class="row">
-            <span class="label">H</span>
-            <span class="value">29°</span>
-        </div>
-        <div class="row">
-            <span class="label">L</span>
-            <span class="value">12°</span>
-        </div>
+    <div>
+        <div id="main-temp" class="temp"></div>
+        <div id="main-feels-like"></div>
     </div>
-
     <!-- НОВИЙ БЛОК -->
 </div>
 <div class="recent">
@@ -90,25 +81,24 @@
                 <h2 id="nearby-temp"></h2>
             </div>
 
-            <h3 id="nearby-city">Liverpool, UK</h3>
-            <p id="nearby-description">Partly Cloudy</p>
+            <h3 id="nearby-city"></h3>
+            <p id="nearby-description"></p>
         </div>
 
         <div class="weather-card">
             <div class="top">
                 <img src="" alt="">
-                <h2>-2°</h2>
+                <h2 id="nearby-temp2"></h2>
             </div>
 
-            <h3>Palermo, Italy</h3>
-            <p>RainThunder</p>
+            <h3 id="nearby-city2"></h3>
+            <p id="nearby-description2"></p>
         </div>
 
     </div>
 
 </div>
 </div>
-
 <div id="forecast" class="forecast">
     
 </div>
